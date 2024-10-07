@@ -1,0 +1,33 @@
+#TUGAS NO 1
+# List angka dan huruf
+angka = [20, 10, 3, 30, 58, 42, 6, 9]
+huruf = ['z', 'a', 'c', 'g', 'p']
+
+# Mengurutkan list angka
+angka_terurut = sorted(angka)
+
+# Mengurutkan list huruf
+huruf_terurut = sorted(huruf)
+
+# Menampilkan hasil
+print("Angka terurut:", angka_terurut)
+print("Huruf terurut:", huruf_terurut)
+
+#TUGAS NO 2
+# Data
+angka = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Menyaring hanya angka genap
+angka_genap = [num for num in angka if num % 2 == 0]
+
+print(angka_genap) 
+
+#TUGAS NO 3
+# Data
+angka = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Memeriksa apakah tiap angka adalah genap
+is_genap = [num % 2 == 0 for num in angka]
+
+print(is_genap)  
+
