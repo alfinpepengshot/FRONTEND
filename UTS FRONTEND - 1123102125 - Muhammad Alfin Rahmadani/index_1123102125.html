@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Biaya Kirim Paket</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script_1123102125.js"></script>
+</head>
+<body>
+    <h2>Perhitungan Biaya Kirim Paket</h2>
+    <form id="shippingForm">
+        <label for="resi">Nomor Resi:</label>
+        <input type="text" id="resi" name="resi"><br><br>
+
+        <label for="berat">Berat Barang (kg):</label>
+        <input type="number" id="berat" name="berat" step="0.1"><br><br>
+
+        <label for="asal">Kota Asal:</label>
+        <select id="asal" name="asal">
+            <option value="Banyuwangi">Banyuwangi</option>
+            <option value="Jember">Jember</option>
+            <option value="Probolinggo">Probolinggo</option>
+            <option value="Surabaya">Surabaya</option>
+        </select><br><br>
+
+        <label for="tujuan">Kota Tujuan:</label>
+        <select id="tujuan" name="tujuan">
+            <option value="Banyuwangi">Banyuwangi</option>
+            <option value="Jember">Jember</option>
+            <option value="Probolinggo">Probolinggo</option>
+            <option value="Surabaya">Surabaya</option>
+        </select><br><br>
+
+        <label for="totalBiaya">Total Biaya Pengiriman:</label>
+        <input type="text" id="totalBiaya" name="totalBiaya" readonly><br><br>
+
+        <button type="button" onclick="hitungBiaya()">Hitung Biaya</button>
+    </form>
+</body>
+</html>
